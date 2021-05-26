@@ -1,0 +1,29 @@
+<html>
+{% include "ece/base.html" %}
+<center><h1>{{title }}</h1></center>
+<table align="center", border="2">
+  <thead>
+    <tr>
+      <td>S.NO</td>
+      <td>FACULTY NAME</td>
+      <td>DEPARTMENT</td>
+      <td>SALARY</td>
+
+    </tr>
+  </thead>
+  {%for k in queryset%}
+  <tbody>
+    <tr>
+      <td> {{forloop.counter}}</td>
+      <td> {{k.fname}}</td>
+      <td> {{k.fdep}}</td>
+      <td> {{k.fsal}}</td>
+
+    </tr>
+
+  </tbody>
+  {% endfor %}
+</table>
+
+
+</html>

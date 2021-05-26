@@ -1,0 +1,51 @@
+<html>
+{% include "ece/base.html" %}
+<center><h1>{{title }}</h1></center>
+<head>
+<style>
+table, td, th {
+  border: 2px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<table>
+<thead>
+    <tr>
+      <td>S.NO</td>
+      <td>NAME</td>
+      <td>DEPARTMENT</td>
+      <td>ROLL NO</td>
+      <td>EMAIL</td>
+      <td>MOBILE NO</td>
+    </tr>
+  </thead>
+
+  {%for k in queryset%}
+
+  <tbody>
+  <tr>
+      <td>{{forloop.counter}}</td>
+      <td> {{k.sname}}</td>
+      <td> {{k.sdep}}</td>
+      <td> {{k.srno}}</td>
+      <td> {{k.semail}}</td>
+      <td> {{k.smob}}</td>
+      {% endfor %}
+  </tr>
+  </tbody>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, td, th {
+  border: 3px solid black;
+}
+th{
+background-color:#FF0000
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  text-align: center;
+
+}
+}
+    </style>
+</head>
+<body>
+    <center>
+        <table>
+            <thead style="background-color:#FF0000">
+            <tr>
+                <td>S.No</td>
+                <td>Name</td>
+                <td>Details</td>
+            </tr>
+            </thead>
+            {% for k in list%}
+                <tbody>
+                    <tr>
+                        <td>{{forloop.counter}}</td>
+                        <td>{{k.lname}}</td>
+                        <td>{{k.address}}</td>
+            {%endfor%}
+                    </tr>
+                </tbody>
+        </table>
+    </center>
+</body>
+</html>

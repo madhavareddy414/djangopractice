@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> form Test </title>
+</head>
+<body>
+<h1> Registration form </h1>
+<form method="post">
+    {{formobj.as_p}}
+    {% csrf_token %}
+    <input type="submit",name="",value="submit"/>
+</form>
+</body>
+
+</html>

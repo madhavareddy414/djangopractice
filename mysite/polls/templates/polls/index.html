@@ -1,0 +1,18 @@
+
+<html>
+<head>
+        <style>
+                li {
+                color:gree;
+                }
+        </style>
+        {% load static %}
+        <link rel="stylesheet" href="{%static 'polls/style.css'%}">
+</head>
+<ul>
+
+        <li><a href="{% url 'detail' question.id %}">{{question.question_text}} </a></li>
+
+
+</ul>
+</html>

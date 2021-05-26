@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <center><h1>{{title}}</h1></center>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+.btn{
+    position: fixed; /* or position: absolute; */
+    top: 15;
+    right: 10;
+button {
+  border: none;
+  color:red;
+  padding: 10px 32px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+}
+body{
+        background:
+        url(https://images.unsplash.com/photo-1523378759295-3a7b309ca5fe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80)
+        }
+table, td, th {
+  border: 3px solid black;
+}
+th{
+background-color:#FF0000
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td {
+  text-align: center;
+
+}
+}
+
+.button {background-color: #4CAF50;} /* Green */
+.btn{
+    position: fixed; /* or position: absolute; */
+    top: 15;
+    right: 10;
+
+}
+</style>
+</head>
+<body>
+    <center><table>
+        <thead>
+            <tr>
+                <td><b>S.No</b></td>
+                <td><b>Student Name</b></td>
+                <td><b>Student Email</b></td>
+                <td><b>Studnet Mob</b></td>
+                <td><b>Student Address</b></td>
+            </tr>
+        </thead>
+        {% for k in res %}
+        <tbody>
+        <tr>
+            <td>{{forloop.counter}}</td>
+             <td>{{k.sname}}</td>
+             <td>{{k.semail}}</td>
+             <td>{{k.smob}}</td>
+             <td>{{k.sadd}}</td>
+            {% endfor %}
+        </tr>
+        </tbody>
+
+    </table></center>
+</body>
+</html>

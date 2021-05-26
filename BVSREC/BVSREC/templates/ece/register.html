@@ -1,0 +1,66 @@
+<html>
+{% include "ece/base.html" %}
+<center><h1>{{title }}</h1></center>
+<head>
+    <style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+
+
+
+</head>
+<form method="post" >{%csrf_token %}
+<!--    {{form.as_p}}-->
+    <label for="sname">Student name:</label><br>
+    <input type="text" id="sname" name="sname"><br>
+    <label for="sdep">Student Dep:</label><br>
+    <input type="text" id="sdep" name="sdep"><br>
+    <label for="srno">Student Rollno:</label><br>
+    <input type="text" id="srno" name="srno"><br>
+    <label for="semail">Student Email:</label><br>
+    <input type="text" id="semail" name="semail"><br>
+    <label for="smob">Student Mobile:</label><br>
+    <input type="text" id="smob" name="smob"><br><br>
+    <button class="button button1">Register</button>
+
+</form>
+</center>
+</html>
+
+<!--<html>-->
+<!--<head>-->
+<!--<style> -->
+<!--input[type=text] {-->
+<!--  width: 100%;-->
+<!--  padding: 12px 20px;-->
+<!--  margin: 8px 0;-->
+<!--  box-sizing: border-box;-->
+<!--}-->
+<!--</style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<p>Padded text fields:</p>-->
+
+<!--<form>-->
+<!--  <label for="fname">First Name</label>-->
+<!--  <input type="text" id="fname" name="fname">-->
+<!--  <label for="lname">Last Name</label>-->
+<!--  <input type="text" id="lname" name="lname">-->
+<!--</form>-->
+
+<!--</body>-->
+<!--</html>-->

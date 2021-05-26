@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--    <table>-->
+
+<!--      {{data.sname}}<br>-->
+<!--      {{data.saddr}}<br>-->
+<!--      {{data.sdep}}<br>-->
+<!--      {{data.ssch}}<br>-->
+<!--    </table>-->
+</head>
+<body>
+<!--      {{object.sname}}<br>-->
+<!--      {{object.semail}}<br>-->
+<!--      {{object.smob}}<br>-->
+<!--      {{object.ssch}}<br>-->
+<!--      {{object.sadd}}<br>-->
+
+<!--        <br>-->
+<!--        <br>-->
+<!--        <a href="/" class="btn btn-secondary">Back</a>-->
+<center><table>
+    <thead style="background-color:#FF0000">
+      <tr>
+          <td><b>S.No</b></td>
+          <td><b>Student Name</b></td>
+          <td><b>Student email</b></td>
+          <td><b>Student Mob</b></td>
+          <td><b>Student School</b></td>
+          <td><b>Student Address</b></td>
+
+      </tr>
+    </thead>
+    {% for object in object_list %}
+    <tbody>
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{object.sname}}</td>
+        <td>{{object.semail}}</td>
+        <td>{{object.smob}}</td>
+        <td>{{object.ssch}}</td>
+        <td>{{object.sadd}}</td>
+        {% endfor %}
+    </tr>
+    </tbody>
+
+<!--<a class="btn btn-primary btn-lg" href="{%url 'home'%}" role="button">back to home</a>-->
+</table>
+
+</center>
+</body>
+</html>

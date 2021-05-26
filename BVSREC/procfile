@@ -1,0 +1,1 @@
+web: guincore BVSREC.wsgi --log-file -
