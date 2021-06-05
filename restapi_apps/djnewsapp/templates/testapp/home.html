@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{%static 'css/main.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"
+
+</head>
+
+<body>
+
+    <div class="container" align="center">
+        <div class="jumbotron" align="center">
+            <center><h1>Welcome News Portal</h1></center>
+            <a class="btn btn-primary btn-lg" href="/movies">Movies Info</a>&nbsp&nbsp;
+            <a class="btn btn-primary btn-lg" href="/sports">Sports Info</a>&nbsp
+            <a class="btn btn-primary btn-lg" href="/politics">Politics Info</a>&nbsp;
+        </div>
+    </div>
+    <div class="container">
+        {%block content%}
+        {%endblock%}
+    </div>
+</body>
+</html>

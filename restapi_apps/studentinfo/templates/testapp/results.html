@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- JavaScript Bundle with Popper -->
+
+</head>
+<body>
+<h1 align="center">Student Information</h1>
+<hr>
+    <div class="container">
+        <table border="collapse" align="center">
+            <thead>
+            <th>Roll no</th>
+            <th>DOB</th>
+            <th>Marks</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            </thead>
+            {% for student in students%}
+            <tr>
+                <td>{{student.rollno}}</td>
+                <td>{{student.dob}}</td>
+                <td>{{student.marks}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.phone_number}}</td>
+                <td>{{student.address}}</td>
+            </tr>
+            {% endfor%}
+        </table>
+
+    </div>
+</body>
+</html>

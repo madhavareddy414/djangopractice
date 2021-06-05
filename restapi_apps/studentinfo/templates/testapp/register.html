@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="POST">{%csrf_token%}
+            {{form.as_p}}
+            <button class="btn btn-outline-info" type="submit"> Register</button>
+        </form>
+        <div>
+             {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        </div>
+
+    </div>
+
+</body>
+</html>

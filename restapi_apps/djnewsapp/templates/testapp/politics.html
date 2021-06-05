@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+  <style>
+        h1{
+        text-border:20px;
+        text-align:center;
+        }
+        h2{
+        color:yellow;
+        }
+        body{
+        background:url(https://wallpaperaccess.com/full/2040078.jpg)
+        background-repeat:repeat-n;
+        }
+        img{
+        width:20%;
+        height:300px;
+        border:10 px solid red;
+        margin:5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="{%static 'css/main.css'%}">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"
+
+</head>
+
+<body>
+<h1 aria-controls="">Politics News Info.....</h1>
+<hr>
+    <ul>
+        <li>{{news1}}</li>
+        <li>{{news2}}</li>
+        <li>{{news3}}</li>
+    </ul>
+     <img src="{%static 'images/modi.jpg'%}" alt="">
+    <img src="{%static 'images/modi.jpg'%}" alt="">
+    <img src="{%static 'images/modi.jpg'%}" alt="">
+</body>
+</html>
