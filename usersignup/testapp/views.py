@@ -3,10 +3,13 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from testapp.forms import UserRegisterForm
 from django.shortcuts import redirect
+from testapp.models import Posts
 
 
-def home(request):
-    return render(request,'testapp/home.html')
+def posts(request):
+
+    posts = Posts.objects.all()
+    return render(request,'testapp/home.html',{'posts':posts})
 
 def register(request):
     if request.method == 'POST':

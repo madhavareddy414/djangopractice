@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'testapp.middleware.SampleMiddleware'
 ]
 
 ROOT_URLCONF = 'usersignup.urls'
@@ -127,5 +129,5 @@ STATICFILES_DIRS=[STATIC_DIR]
 CRISPY_TEMPLATE_PACK='bootstrap4'
 LOGIN_URL ='login'
 LOGIN_REDIRECT_URL = 'home'
-MEDIA_ROOT='/media/'
-MEDIA_URL = os.path.join(BASE_DIR,'media/')
+MEDIA_URL='/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
