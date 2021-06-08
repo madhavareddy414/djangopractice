@@ -22,19 +22,19 @@ import requests
 
 import json
 #
-# def create_source():
-#     BASE_URL = "http://127.0.0.1:8000/"
-#     END_POINT = 'api-list/'
-#     new_emp = {
-#         'eno':400,
-#         'ename':'rao',
-#         'esal':1000,
-#         'eaddr':'bglr'
-#     }
-#     resp =requests.post(BASE_URL+END_POINT,data=json.dumps(new_emp))
-#     print(resp.json())
-#     print(resp.status_code)
-# create_source()
+def create_source():
+    BASE_URL = "http://127.0.0.1:8000/"
+    END_POINT = 'api-list/'
+    new_emp = {
+        'eno':400,
+        'ename':'raogopal',
+        'esal':1000,
+        'eaddr':'bglr'
+    }
+    resp =requests.post(BASE_URL+END_POINT,data=json.dumps(new_emp))
+    print(resp.json())
+    print(resp.status_code)
+create_source()
 
 # def update_source(id):
 #     BASE_URL = "http://127.0.0.1:8000/"
